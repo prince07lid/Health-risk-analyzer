@@ -1,62 +1,83 @@
-# Disease-Risk-Analysis-with-Machine-Learning
+# Disease Risk Analysis Using Machine Learning
 
-## Project Overview
-This project aims to enhance disease risk prediction using a comprehensive dataset. The dataset includes clinical, demographic, and medication data. Various data mining and machine learning techniques were employed to develop robust predictive models.
+## Project Summary
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-- [Feature Engineering](#feature-engineering)
-- [Model Development and Training](#model-development-and-training)
-- [Model Evaluation and Selection](#model-evaluation-and-selection)
-- [Unsupervised Learning and Cluster Analysis](#unsupervised-learning-and-cluster-analysis)
-- [Achievements and Impact](#achievements-and-impact)
-- [Files Included](#files-included)
+This project focuses on predicting disease risk levels using a rich dataset comprising clinical, demographic, and medication-related information. Multiple data mining and machine learning techniques were applied to build accurate, reliable, and interpretable predictive models.
 
+---
 
-## Introduction
-This project integrates various data mining techniques to predict disease risk levels accurately. It involves extensive data cleaning, feature engineering, model training, and evaluation to ensure the reliability and precision of predictive models.
+## Contents
 
-## Data Cleaning and Preprocessing
-- Addressed missing values using KNN imputation and mode/mean imputation.
-- Managed outliers with DBSCAN, Isolation Forest, and Local Outlier Factor (LOF) techniques.
-- Standardized numerical variables to ensure uniformity in scale.
+* Overview
+* Data Preparation
+* Feature Construction
+* Model Building
+* Performance Evaluation
+* Clustering & Unsupervised Insights
+* Key Outcomes
+* Project Files
 
-## Feature Engineering
-- Developed new features such as 'age group' to enhance model inputs.
-- Removed non-contributive columns and applied One-Hot and Ordinal Encoding to categorical variables.
+---
 
-## Model Development and Training
-- Implemented multiple machine learning models: k-Nearest Neighbors, Support Vector Machine, Decision Tree, and Random Forest.
-- Used grid search and cross-validation for hyperparameter tuning.
-- Compared models using both full and refined feature sets.
+## Overview
 
-## Model Evaluation and Selection
-- Evaluated models using accuracy, precision, recall, and F1-score.
-- Decision Tree model achieved the highest accuracy of 99%, making it the optimal choice.
-- Analyzed confusion matrices to assess model performance across different risk categories.
+The objective of this project is to develop a robust disease risk prediction system through systematic data preprocessing, feature engineering, supervised learning, and unsupervised analysis. Emphasis was placed on data quality, model comparison, and interpretability to ensure dependable results.
 
-## Unsupervised Learning and Cluster Analysis
-- Applied KMeans and Hierarchical Clustering to identify natural groupings within the data.
-- Validated the optimal number of clusters using the elbow method and silhouette scores.
-- Compared clustering results with supervised learning outcomes for deeper insights.
+---
 
-## Achievements and Impact
-- Enhanced disease risk classification accuracy, with the Decision Tree model achieving 99%.
-- Balanced the dataset using manual upsampling and SMOTE techniques, ensuring robust model training and validation.
-- Conducted extensive exploratory data analysis, providing insightful visualizations that aided in understanding the dataset's structure and relationships.
-- Developed a robust feature engineering pipeline, improving model inputs and resulting in more accurate predictions.
-- Successfully implemented and evaluated multiple machine learning models, showcasing versatility in handling healthcare data.
-- Applied rigorous statistical analysis to ensure the integrity and reliability of the data, addressing outliers and ensuring proper scaling.
-- Demonstrated the potential of data-driven approaches in healthcare analytics, contributing to improved patient care and decision-making processes.
-- Shared detailed documentation and a comprehensive report, facilitating reproducibility and transparency of the project findings.
-- Highlighted the importance of handling imbalanced datasets and provided practical solutions, benefiting future research and applications.
-- Utilized advanced clustering techniques to uncover natural groupings within the data, offering new insights into disease risk factors.
+## Data Preparation
 
-## Files Included
-- `Disease_Risk_Analysis.ipynb`: Jupyter notebook containing the code for data cleaning, feature engineering, model training, and evaluation.
-- `DATA_MINING_REPORT.pdf`: Detailed report of the project, including methodologies, results, and insights.
-- `predictions.csv`: CSV file containing the predictions made by the trained model.
-- `disease_train.csv`: CSV file containing the training dataset used for model training.
-- `disease_test.csv`: CSV file containing the test dataset used for model evaluation.
+* Handled missing values using **KNN imputation** along with **mean/mode imputation** where appropriate.
+* Detected and treated outliers using **DBSCAN**, **Isolation Forest**, and **Local Outlier Factor (LOF)**.
+* Applied **standardization** to numerical features to maintain consistent scaling.
 
+---
+
+## Feature Construction
+
+* Created informative derived features such as **age groups** to improve model expressiveness.
+* Removed irrelevant or low-impact attributes.
+* Transformed categorical data using **One-Hot Encoding** and **Ordinal Encoding**.
+
+---
+
+## Model Building
+
+* Trained multiple machine learning models including:
+
+  * k-Nearest Neighbors (KNN)
+  * Support Vector Machine (SVM)
+  * Decision Tree
+  * Random Forest
+* Performed **hyperparameter optimization** using grid search with cross-validation.
+* Evaluated performance using both complete and optimized feature sets.
+
+---
+
+## Performance Evaluation
+
+* Assessed models using **accuracy, precision, recall, and F1-score**.
+* The **Decision Tree model** delivered the best performance with an accuracy of **99%**.
+* Confusion matrices were analyzed to understand classification behavior across risk categories.
+
+---
+
+## Clustering & Unsupervised Insights
+
+* Implemented **K-Means** and **Hierarchical Clustering** to explore inherent data structures.
+* Determined optimal clusters using the **elbow method** and **silhouette analysis**.
+* Compared clustering patterns with supervised predictions for additional interpretability.
+
+---
+
+## Key Outcomes
+
+* Achieved highly accurate disease risk classification with optimized models.
+* Addressed class imbalance using **manual upsampling** and **SMOTE**, improving generalization.
+* Conducted detailed exploratory data analysis with meaningful visual insights.
+* Built a reusable and scalable feature engineering workflow.
+* Demonstrated effective use of machine learning in healthcare analytics.
+* Ensured statistical robustness through proper outlier handling and scaling.
+* Produced comprehensive documentation to support reproducibility and transparency.
+* Highlighted best practices for handling imbalanced medical datasets.
+* Extracted hidden patterns in disease risk factors using clustering techniques.
